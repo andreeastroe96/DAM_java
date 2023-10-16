@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Seminar1_1105</string>
+    <string name="hello_world"> Hello world! </string>
+    <!-- adding a parametrized string: the format is: %no_param$param_type -->
+    <!-- no_param -> an int value, the number of parameters; param_type -> for string: s, for int:d -->
+    <string name="method_call">%1$s call</string>
+</resources>
