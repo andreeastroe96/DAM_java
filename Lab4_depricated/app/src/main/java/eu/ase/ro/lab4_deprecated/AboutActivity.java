@@ -1,4 +1,4 @@
-package eu.ase.ro.lab4_parcelable;
+package eu.ase.ro.lab4_deprecated;
 
 import androidx.appcompat.app.AppCompatActivity;
 
