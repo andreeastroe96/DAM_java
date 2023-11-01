@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView -> a ViewGroup that is used to make vert
+un ViewGroup care este folosit pentru a face view-uri verticale derulabile.-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddMovieActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- android:layout_width si android:layout_height -> atribute obligatorii pentru fiecare element vizual din ecran
+    recomandat si android:id a fi setat-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutAddMovieActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:id="@+id/ttilMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/etMovieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tilHintTitle"
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:id="@+id/tilDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/ttilMovieTitle">
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tilHintDate"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:id="@+id/tilProfit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilDate">
+
+            <EditText
+                android:id="@+id/etProfit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tilHintProfit"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinnerMovieGenre"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelSpinner"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <RadioGroup
+            android:id="@+id/rgPlatform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerMovieGenre">
+
+            <RadioButton
+                android:id="@+id/rbNetflix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbNetflix" />
+
+            <RadioButton
+                android:id="@+id/rbHBO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbHBO" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvLabelSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/tvSpinner"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilProfit" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/lightBlue"
+            android:text="@string/btnSave"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPlatform" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

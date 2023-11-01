@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Lab6</string>
+    <string name="option1">About</string>
+    <string name="option2">Option 2</string>
+
+    <string name="tilHintTitle">Fill in the title of the movie</string>
+    <string name="tilHintDate">"Fill in the release date of the movie"</string>
+    <string name="tilHintProfit"> Fill in the profit of the movie </string>
+    <string name="rbNetflix">Netflix</string>
+    <string name="rbHBO">HBO</string>
+    <string name="tvSpinner"> Please select the genre of the movie </string>
+    <string name="btnSave">Save</string>
+
+    <!-- un array of strings, elementele of the array are declared via the tag "item" -->
+    <string-array name="movie_genre">
+        <item>Thriller</item>
+        <item>Comedy</item>
+        <item>Drama</item>
+        <item>SF</item>
+    </string-array>
+
+    <string name="add_movie_title_error"> Movie title is not valid</string>
+    <string name="add_movie_date_error"> Movie release date is not valid</string>
+    <string name="add_movie_profit_error"> Movie profit is not valid</string>
+
+    <string name="btnFragment1"> Show Fragment 1</string>
+    <string name="btnFragment2"> Show Fragment 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="movieTitle"> Movie title</string>
+    <string name="profit"> Profit</string>
+    <string name="movieGenre">Movie Genre</string>
+    <string name="movieReleaseDate"> Release Date</string>
+    <string name="platform">Platform</string>
+
+    <string name="releaseDate">Release date: %1$s</string>
+    <string name="profitString">Profit: %1$d</string>
+</resources>
