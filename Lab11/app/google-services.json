@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "333785506386",
+    "project_id": "fir-example2024",
+    "storage_bucket": "fir-example2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333785506386:android:dac52dcd14c48f5b7df58b",
+        "android_client_info": {
+          "package_name": "eu.ase.ro.lab11"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt_UMZe7UvbC3ncuW7_YnocHx1T8SI3Ck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
